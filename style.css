@@ -1,0 +1,819 @@
+:root {
+  --main-color: #a736af; /* global scope */
+  --secondary-color: #1b234a;
+  --font-color: #f2f5ff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px 3%;
+}
+nav .logo a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+}
+nav .nav-link ul {
+  display: flex;
+  gap: 50px;
+}
+nav .nav-link ul li {
+  list-style-type: none;
+}
+nav .nav-link ul li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-buttons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  align-items: center;
+}
+.nav-buttons button {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid;
+  cursor: pointer;
+}
+.hero-section {
+  background-color: var(--main-color);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-bottom-right-radius: 6rem;
+  margin-bottom: 20px;
+}
+.hero-section .hero-leftside {
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 40vh;
+  gap: 20px;
+}
+.hero-section .hero-leftside h1 {
+  width: 58%;
+  padding: 10px;
+}
+.hero-section .hero-leftside p {
+  width: 80%;
+  margin-bottom: 10px;
+}
+.hero-section .hero-leftside .buy-botton {
+  width: 132px;
+  height: 39px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+/* Best Seller section */
+.bestSeller-section {
+  height: 80vh;
+}
+.bestseller-title {
+  width: 84%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.bestseller-title a {
+  text-decoration: none;
+  color: black;
+}
+.bestseller-items {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: start;
+}
+
+.bestseller-circles {
+  display: block;
+  width: 162px;
+  height: 40px;
+  background:
+    radial-gradient(circle, #d9d9d9 10px, transparent 11px) 0 0 / 48px 40px,
+    radial-gradient(circle, #272727 10px, transparent 11px) 28px 0 / 48px 40px,
+    radial-gradient(circle, #1c234d 10px, transparent 11px) 57px 0 / 48px 40px;
+  background-repeat: no-repeat;
+}
+/* Promotional Section */
+
+.promotional-banners {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.promotional-banners .first-div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  background-color: var(--main-color);
+  margin-bottom: 20px;
+  width: 631px;
+  height: 307px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.promotional-banners .first-div .prmotional-leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.promotional-banners .first-div .prmotional-leftside h3 {
+  width: 80%;
+  margin: 20px;
+  font-size: 2rem;
+  color: var(--font-color);
+}
+.promotional-banners .first-div .prmotional-leftside button {
+  width: 30%;
+  margin: 20px;
+  padding:8px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.promotional-banners .second-div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  background-color: var(--secondary-color);
+  margin-top: 20px;
+  width: 631px;
+  height: 307px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.promotional-banners .second-div .prmotional-leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.promotional-banners .second-div .prmotional-leftside h3 {
+  width: 100%;
+  margin: 15px;
+  font-size: 2rem;
+  color: var(--font-color);
+}
+.promotional-banners .second-div .prmotional-rightside img{
+  width: 100%;
+  font-size: 2rem;
+  color: var(--font-color);
+}
+.promotional-banners .second-div .prmotional-leftside button {
+  width: 30%;
+  margin: 20px;
+  padding:8px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+/* BlackFriday Section */
+.blackfriday-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #222121;
+  color: var(--font-color);
+  margin: 10px;
+  padding: 40px 15px 15px 15px;
+  height: 70vh;
+  margin-bottom: 20px;
+}
+.blackfriday-rightside {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 0 0 0;
+  gap: 20px;
+}
+.blackfriday-circles {
+  display: block;
+  width: 162px;
+  height: 40px;
+  background:
+    radial-gradient(circle, #d9d9d9 10px, transparent 11px) 0 0 / 48px 40px,
+    radial-gradient(circle, #272727 10px, transparent 11px) 28px 0 / 48px 40px,
+    radial-gradient(circle, #1c234d 10px, transparent 11px) 57px 0 / 48px 40px;
+  background-repeat: no-repeat;
+}
+.cost {
+  display: flex;
+  flex-direction: column;
+}
+.cost span:first-child {
+  color: #616161;
+  text-decoration: line-through;
+}
+.blackfriday-leftside {
+  display: flex;
+  gap: 20px;
+}
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 376px;
+  height: 88px;
+  background-color: #f1f3ff;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.item:not(:last-child) {
+  border-right: 2px solid #d0d0d0;
+}
+
+.label {
+  font-size: 20px;
+  color: black;
+}
+
+.number {
+  font-size: 36px;
+  line-height: 1;
+  color: #000;
+}
+.blackfriday-card img {
+  height: 300px;
+}
+
+/* New Arrival section */
+.newarrival-section {
+  margin-bottom: 10px;
+  height: 70vh;
+}
+.newarrival-title {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.newarrival-title a {
+  text-decoration: none;
+  color: black;
+}
+.newarrival-items {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: start;
+}
+.newarrival-items h3 {
+  font-weight: 200;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.newarrival-frame {
+  background-color: #f2f5ff;
+  height: 250px;
+}
+.newarrival-frame img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+.newarrival-frame {
+  background-color: #f2f5ff;
+}
+.newarrival-circles {
+  display: block;
+  width: 162px;
+  height: 40px;
+  background:
+    radial-gradient(circle, #d9d9d9 10px, transparent 11px) 0 0 / 48px 40px,
+    radial-gradient(circle, #272727 10px, transparent 11px) 28px 0 / 48px 40px,
+    radial-gradient(circle, #1c234d 10px, transparent 11px) 57px 0 / 48px 40px;
+  background-repeat: no-repeat;
+}
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 20px 10px 20px;
+  background-color: #f2f5ff;
+}
+.footer-logo {
+  width: 25%;
+}
+.footer-logo .logo {
+  display: flex;
+  gap: 5px;
+}
+.footer-logo p {
+  width: 85%;
+}
+.footer-logo .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  background-color: #e5e7eb;
+  color: #383838;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #333;
+  color: white;
+}
+.siteMap ul li {
+  list-style: none;
+}
+.siteMap ul a {
+  text-decoration: none;
+  color: #383838;
+}
+.products ul li {
+  list-style: none;
+}
+.products ul a {
+  text-decoration: none;
+  color: #383838;
+}
+.Subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Subscription input {
+  border-radius: 6px;
+  padding: 8px;
+  border: none;
+  background-color: #787878;
+}
+.Subscription input::placeholder {
+  color: black;
+}
+.Subscription button {
+  padding: 8px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 6px;
+}
+/* =========================
+   Tablets: 768px - 1024px
+========================= */
+@media screen and (max-width: 1024px) {
+  /* Navbar */
+  nav {
+    padding: 10px 2%;
+    gap: 15px;
+  }
+
+  nav .nav-link ul {
+    gap: 20px;
+  }
+
+  .nav-buttons {
+    gap: 10px;
+  }
+
+  /* Hero section */
+  .hero-section {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .hero-section .hero-leftside {
+    width: 55%;
+    height: auto;
+    gap: 15px;
+  }
+
+  .hero-section .hero-leftside h1 {
+    width: 90%;
+  }
+
+  .hero-section .hero-leftside p {
+    width: 95%;
+  }
+
+  .hero-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Best seller */
+  .bestSeller-section {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .bestseller-title {
+    width: 90%;
+  }
+
+  .bestseller-items,
+  .newarrival-items {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  /* Promotional banners */
+  .promotional-banners {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .promotional-banners .first-div,
+  .promotional-banners .second-div {
+    width: 100%;
+    max-width: 631px;
+    margin: 0;
+  }
+
+  .promotional-banners img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Black Friday */
+  .blackfriday-section {
+    height: auto;
+    padding: 30px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .blackfriday-leftside {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blackfriday-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .blackfriday-rightside {
+    padding: 0;
+  }
+
+  /* New arrivals */
+  .newarrival-section {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .newarrival-title {
+    width: 90%;
+  }
+
+  .newarrival-frame {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .newarrival-frame img {
+    max-width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer-logo {
+    width: 40%;
+  }
+}
+
+/* =========================
+   Mobile: 481px - 767px
+========================= */
+@media screen and (max-width: 767px) {
+  /* Navbar */
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 5px;
+  }
+
+  nav .logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav .nav-link ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-buttons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Hero section */
+  .hero-section {
+    width: 95%;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom-right-radius: 3rem;
+  }
+
+  .hero-section .hero-leftside {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero-section .hero-leftside h1,
+  .hero-section .hero-leftside p {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .hero-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  /* Best seller */
+  .bestSeller-section {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .bestseller-title,
+  .newarrival-title {
+    width: 90%;
+    gap: 10px;
+  }
+
+  .bestseller-items,
+  .newarrival-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 12px;
+    padding: 0 15px;
+  }
+
+  .bestseller-items > *,
+  .newarrival-items > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .bestseller-items img,
+  .newarrival-items img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .newarrival-items h3 {
+    font-size: 16px;
+  }
+
+  .bestseller-circles,
+  .newarrival-circles,
+  .blackfriday-circles {
+    max-width: 100%;
+  }
+
+  /* Promotional banners */
+  .promotional-banners {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .promotional-banners .first-div,
+  .promotional-banners .second-div {
+    width: 100%;
+    height: auto;
+    min-height: 230px;
+    padding: 15px;
+    gap: 10px;
+    border-top-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+  }
+
+  .promotional-banners .first-div .prmotional-leftside,
+  .promotional-banners .second-div .prmotional-leftside {
+    flex: 1;
+    min-width: 0;
+    gap: 20px;
+  }
+
+  .promotional-banners .first-div .prmotional-leftside h3,
+  .promotional-banners .second-div .prmotional-leftside h3 {
+    width: auto;
+    margin: 5px;
+    font-size: 1.4rem;
+  }
+
+  .promotional-banners .first-div .prmotional-leftside button,
+  .promotional-banners .second-div .prmotional-leftside button {
+    width: auto;
+    margin: 5px;
+    align-self: flex-start;
+  }
+
+  .promotional-banners img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Black Friday */
+  .blackfriday-section {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 15px;
+    gap: 30px;
+    margin: 10px;
+  }
+
+  .blackfriday-leftside {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .blackfriday-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .blackfriday-rightside {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .countdown {
+    width: 100%;
+    max-width: 376px;
+  }
+
+  .label {
+    font-size: 15px;
+  }
+
+  .number {
+    font-size: 28px;
+  }
+
+  /* New arrivals */
+  .newarrival-section {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .newarrival-frame {
+    height: auto;
+    min-height: 150px;
+  }
+
+  .newarrival-frame img {
+    width: 90%;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 25px 20px;
+  }
+
+  .footer-logo {
+    width: 100%;
+  }
+
+  .footer-logo p {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .Subscription {
+    width: 100%;
+  }
+
+  .Subscription input,
+  .Subscription button {
+    width: 100%;
+  }
+}
+
+/* =========================
+   Small mobile: 480px and below
+========================= */
+@media screen and (max-width: 480px) {
+  nav .nav-link ul {
+    gap: 10px;
+  }
+
+  nav .nav-link ul li a {
+    font-size: 14px;
+  }
+
+  .nav-buttons button {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  .hero-section .hero-leftside h1 {
+    font-size: 1.7rem;
+  }
+
+  .bestseller-title,
+  .newarrival-title {
+    font-size: 14px;
+  }
+
+  .bestseller-items,
+  .newarrival-items {
+    grid-template-columns: 1fr;
+    padding: 0 25px;
+  }
+
+  .promotional-banners .first-div,
+  .promotional-banners .second-div {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .promotional-banners .first-div .prmotional-leftside,
+  .promotional-banners .second-div .prmotional-leftside {
+    width: 100%;
+    align-items: center;
+  }
+
+  .promotional-banners .first-div .prmotional-leftside h3,
+  .promotional-banners .second-div .prmotional-leftside h3 {
+    font-size: 1.5rem;
+  }
+
+  .promotional-banners .first-div .prmotional-leftside button,
+  .promotional-banners .second-div .prmotional-leftside button {
+    align-self: center;
+  }
+
+  .countdown {
+    height: 75px;
+  }
+
+  .number {
+    font-size: 24px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .blackfriday-section {
+    padding: 25px 10px;
+  }
+}

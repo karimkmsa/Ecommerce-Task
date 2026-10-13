@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.cart {
+    max-width: 492px;
+    min-height: 520px;
+    margin: 0 auto;
+    padding: 28px;
+    border-left: 1px solid #f0e8f0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.cart-header h1 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.cart-header a {
+    color: #444;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.product {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+}
+
+.product-image {
+    width: 208px;
+    height: 248px;
+    background-color: #f1f3ff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 6px;
+}
+
+.colors {
+    display: flex;
+    gap: 9px;
+    margin-bottom: 18px;
+}
+
+.color {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.black {
+    background-color: #353535;
+}
+
+.gray {
+    background-color: #666666;
+}
+
+.blue {
+    background-color: #1c254f;
+}
+
+.price {
+    font-size: 25px;
+    margin: 0 0 22px;
+    white-space: nowrap;
+}
+
+.delivery {
+    font-size: 13px;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.delivery strong {
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.delivery span {
+    color: #444;
+}
+
+.checkout {
+    display: block;
+    width: 192px;
+    height: 38px;
+    margin: 54px auto 0;
+    background-color: #b0307c;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background-color: #962565;
+}
+
+@media (max-width: 450px) {
+    .cart {
+        padding: 20px;
+    }
+
+    .product {
+        gap: 15px;
+    }
+
+    .product-image {
+        width: 45%;
+        height: 200px;
+    }
+
+    .price {
+        font-size: 21px;
+    }
+
+    .delivery {
+        font-size: 11px;
+    }
+
+    .cart-header a {
+        font-size: 11px;
+    }
+}
